@@ -1,4 +1,4 @@
-def bigger(a, b):
+def biggest(a, b):
     if a > b:
         return a
     else:
@@ -31,4 +31,4 @@ def positive_number(a):
     elif a == 0:
         print('zero')
     else:
-        print('negative')
+        print('negative number')
