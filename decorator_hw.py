@@ -13,7 +13,7 @@ def retry(attempts=5, desired_value=None):
     def wrapper(func):
         def inner_wrapper(*args, **kwargs):
             current_attempt = 1
-            while current_attempt < attempts:
+            while current_attempt <= attempts:
                 result = func(*args, **kwargs)
                 if result == desired_value:
                     print(result)
@@ -63,9 +63,9 @@ def print_border(n):
 
 
 def print_middle(n, s):
-    print('*' + s*' ' + '*')
     if n < 1:
         return
+    print('*' + s*' ' + '*')
     print_middle(n-1, s)
 
 
@@ -82,4 +82,4 @@ def print_square(n):
     print_border(n)
 
 
-print_square(5)
+print_square(3)

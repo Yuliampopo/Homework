@@ -11,7 +11,7 @@ def flatten(list_with_sublists):
 
 
 if __name__ == '__main__':
-    assert get_even_or_odd_numbers(3, True) == [0, 2]
+    assert get_even_or_odd_numbers(6, True) == [0, 2, 4, 6]
     assert get_even_or_odd_numbers(4, False) == [1, 3]
 
     assert search_words('he', ['hello', 'orange', 'phenomenon']) == ['hello', 'phenomenon']
